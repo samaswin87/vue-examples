@@ -6,7 +6,7 @@ class DataService {
     }
 
     get(id) {
-        return http.get("/show/${id}");
+        return http.get('/show/${id}');
     }
 
     create(data) {
@@ -14,11 +14,11 @@ class DataService {
     }
 
     update(id, data) {
-        return http.put("/records/${id}", data);
+        return http.put('/records/${id}', data);
     }
 
     delete(id) {
-        return http.delete("/records/${id}");
+        return http.delete('/records/${id}');
     }   
 
     deleteAll() {
@@ -26,7 +26,7 @@ class DataService {
     }
 
     findByName(name){
-        return http.get("/records?name=${name}");
+        return http.get('/records?name=${name}');
     }
 }
 
